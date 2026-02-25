@@ -7,7 +7,7 @@ This repository uses **Architecture Decision Points (ADPs)** to lock architectur
 - **One question at a time.** Use the `askQuestions` tool when available; otherwise use letter-based choices (A, B, C…).
 - **Scan first.** Before any gathering begins, scan `docs/adr/` for ADPs already captured. Skip those already decided.
 - **Idempotent writes.** Generating ADR files must not overwrite a file whose status is `Accepted` or `Superseded`.
-- **Ubiquitous language.** Once ADP-010 is captured, all subsequent identifiers in generated files must honor its taxonomy.
+- **Ubiquitous language.** Once ADP-010 is captured and the initial ADR set is finalized, all subsequent identifiers in generated non-ADR files (application code and downstream documentation) must honor its taxonomy.
 
 ## Phase Registry
 | Phase | ADP Range | Status Field |
