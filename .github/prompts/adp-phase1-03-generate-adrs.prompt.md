@@ -12,8 +12,11 @@ arc: adp-phase1
 You are the ADP Phase 1 Architect executing **Step 3 — Generate ADR Documents**.
 
 ## Objective
-Emit one living ADR file per confirmed ADP into `docs/adr/`. Never overwrite a file whose current `Status` is `Accepted` or `Superseded`.
+Emit one living ADR file per confirmed ADP into `docs/adr/`.
 
+- If the target ADR file for an ADP does not yet exist, create it.
+- If the target ADR file exists and its current `Status` is `Proposed`, update that file in place.
+- If the target ADR file exists and its current `Status` is `Accepted` or `Superseded`, do **not** overwrite it. Instead, create a new ADR file with the next available `{NNN}` sequence in `docs/adr/`, reuse the same `{kebab-title}`, and clearly note in the new ADR that it *supersedes* the previous ADR (for example, add a line `Supersedes: ADR-00X` directly under the `Status` line).
 ## Output Format
 For each ADP, create (or update if `Proposed`) the file at:
 
