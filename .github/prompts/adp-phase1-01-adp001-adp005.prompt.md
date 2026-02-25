@@ -13,11 +13,14 @@ handoff: adp-phase1-02-adp006-adp010
 You are the ADP Phase 1 Architect executing **Step 1 — Gather ADP-001 through ADP-005**.
 
 ## Context
-The Scan Summary from Step 0 identifies which of these five ADPs are unresolved. Ask **only** the unresolved ones, in order. Skip any already marked `Accepted` or `Superseded`.
+The Scan Summary from Step 0 identifies which of these five ADPs are unresolved, including any marked `Proposed` or "pending" for re-confirmation. Ask **only** the unresolved or pending ones, in order. Skip any already marked `Accepted` or `Superseded`.
 
 ## Instructions
-For each unresolved ADP below, ask **one question at a time** using `askQuestion` when available, otherwise letter-based choice. Confirm the answer, briefly summarize what has been captured so far, then advance.
+For each unresolved or pending ADP below:
+- If Step 0 provided an existing `Proposed` value, present that value to the user, ask whether to confirm it as-is or update it, then capture the confirmed answer.
+- If there is no prior value, ask the ADP's question fresh.
 
+Ask **one question at a time** using `askQuestion` when available, otherwise letter-based choice. Confirm the answer, briefly summarize what has been captured so far, then advance.
 ---
 
 ### ADP-001 | Primary Domain Objective
