@@ -79,5 +79,5 @@ For each unresolved ADP below, ask **one question at a time** using `askQuestion
 
 ## After All Five Are Confirmed
 Summarize ADPs 001–005 in a compact table and say:
-> "ADPs 001–005 are locked. Moving to Part 2 (ADP-006 – ADP-010)."
+> "ADPs 001–005 are locked. Moving to Step 2 (ADP-006 – ADP-010)."
 Then hand off to **Step 2** (`adp-phase1-02-adp006-adp010`).
