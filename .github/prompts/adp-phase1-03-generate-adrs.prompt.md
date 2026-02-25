@@ -72,7 +72,7 @@ Use the template below verbatim, substituting values from the confirmed ADP answ
 
 ## Post-Generation Steps
 
-1. Update `docs/adr/README.md` — append any newly created ADRs to the ADR index table.
+1. Update `docs/adr/README.md` — update the Status column in the ADR index table for any ADRs you created or modified (do not add new rows; all ADRs are already listed).
 2. Confirm each created file path to the user.
 3. Close with:
    > "Phase 1 ADRs are live in `docs/adr/`. When you are ready to advance, run the next phase gathering prompt or set any ADR status to `Accepted` to lock the decision."
