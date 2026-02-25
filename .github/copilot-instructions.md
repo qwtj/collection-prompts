@@ -10,10 +10,11 @@ This repository uses **Architecture Decision Points (ADPs)** to lock architectur
 - **Ubiquitous language.** Once ADP-010 is captured and the initial ADR set is finalized, all subsequent identifiers in generated non-ADR files (application code and downstream documentation) must honor its taxonomy.
 
 ## Phase Registry
-| Phase | ADP Range | Status Field |
-|-------|-----------|--------------|
+| Phase | ADP Range | Phase Identifier |
+|-------|-----------|------------------|
 | Phase 1 – Business Context & Constraints | ADP-001 – ADP-010 | `phase1` |
 
+The phase identifier is internal metadata for Copilot workflows and is not the ADR `Status` field.
 ## ADR Output Convention
 - Path: `docs/adr/ADR-{NNN}-{kebab-title}.md`
 - Status values: `Proposed` → `Accepted` → `Deprecated` → `Superseded`
