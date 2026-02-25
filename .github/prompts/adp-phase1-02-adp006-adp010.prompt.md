@@ -4,7 +4,7 @@ model: gpt-4o
 tools:
   - codebase
   - search
-  - askQuestion
+  - askQuestions
 description: "ADP Phase 1 · Step 2 — Interactive gathering for ADP-006 through ADP-010."
 arc: adp-phase1
 handoff: adp-phase1-03-generate-adrs
